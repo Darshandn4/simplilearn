@@ -1,0 +1,29 @@
+<! DOCTYPE html>
+<html>
+
+<head>
+<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+   <body>   
+                                             
+                  <form id = "myForm" >
+         <select id = "selectNow">
+            <option value = "one"> Hello!</option>
+            <option value =?two? > wassup</option>
+           <option value =?three? > Sorry</option>
+    <option value =?apple? > hi</option>
+    <option value =?pear? > how are you </option>
+    <option value =?ban? > Good </option>
+    <option value=?orange? > bye</option>
+         </select>
+         <input type = "button" onclick = "remove()" value = "Click to Remove" >
+      </form>
+      
+     <script>
+         function remove() {
+            var x = document.getElementById("selectNow");
+            x.remove(x.selectedIndex);
+         }
+      </script>
+     </body>
+</html>
